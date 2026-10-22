@@ -3,283 +3,526 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#00455e" />
     <meta
       name="description"
-      content="Academic homepage of Zizhuo Xu, a researcher in marine engineering and autonomous systems."
+      content="Academic homepage of Zizhuo Xu, a researcher in marine engineering, system identification, and physics-informed machine learning."
     />
     <title>Zizhuo Xu | Academic Homepage</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/template.css?v=20261022" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+        scrollbar-gutter: stable;
+      }
+
+      body {
+        font-family: "Segoe UI", "Source Sans 3", Arial, sans-serif;
+      }
+
+      h1,
+      h2,
+      h3,
+      .site-name {
+        font-family: Inter, "Segoe UI", Arial, sans-serif;
+      }
+
+      .text-navy {
+        color: #00455e;
+      }
+
+      .bg-navy {
+        background-color: #00455e;
+      }
+
+      .bg-navy-lightest {
+        background-color: #e6f0f3;
+      }
+
+      .hover-navy:hover {
+        color: #00455e;
+      }
+
+      .hero-card {
+        background: linear-gradient(
+          135deg,
+          #ffffff 0%,
+          #f8fbfc 60%,
+          #e6f0f3 100%
+        );
+      }
+
+      .hero-copy {
+        max-width: 52rem;
+      }
+
+      .hero-label {
+        color: #00455e;
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .social-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        color: #6b7280;
+        font-size: 0.9rem;
+        font-weight: 600;
+        text-decoration: none;
+      }
+
+      .social-link:hover {
+        color: #00455e;
+      }
+
+      .icon {
+        width: 1.25rem;
+        height: 1.25rem;
+        flex: none;
+        fill: currentColor;
+      }
+
+      .background-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 0.8rem;
+        border-radius: 0.5rem;
+        transition:
+          background-color 0.2s ease,
+          transform 0.2s ease;
+      }
+
+      .background-item:hover {
+        background: #f9fafb;
+        transform: translateX(2px);
+      }
+
+      .dot-icon {
+        width: 0.72rem;
+        height: 0.72rem;
+        margin-top: 0.45rem;
+        flex: none;
+        border: 2px solid #00455e;
+        border-radius: 999px;
+      }
+
+      .paper-card,
+      .project-card {
+        transition:
+          box-shadow 0.25s ease,
+          transform 0.25s ease;
+      }
+
+      .paper-card:hover,
+      .project-card:hover {
+        box-shadow: 0 10px 22px rgba(15, 23, 42, 0.1);
+        transform: translateY(-2px);
+      }
+
+      .project-number {
+        color: #00455e;
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+      }
+
+      .metric {
+        display: inline-block;
+        margin: 0.65rem 0.45rem 0 0;
+        padding: 0.18rem 0.55rem;
+        color: #00455e;
+        background: #e6f0f3;
+        border-radius: 999px;
+        font-size: 0.75rem;
+        font-weight: 700;
+      }
+
+      .award-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 1.5rem;
+        padding: 1rem 0;
+        border-bottom: 1px solid #e5e7eb;
+      }
+
+      .award-row:first-child {
+        padding-top: 0;
+      }
+
+      .award-row:last-child {
+        padding-bottom: 0;
+        border-bottom: 0;
+      }
+
+      .mobile-menu {
+        display: none;
+      }
+
+      .mobile-menu.open {
+        display: block;
+      }
+
+      @media (max-width: 767px) {
+        .desktop-nav {
+          display: none;
+        }
+
+        .mobile-button {
+          display: inline-flex;
+        }
+
+        .award-row {
+          flex-direction: column;
+          gap: 0.25rem;
+        }
+      }
+
+      @media (min-width: 768px) {
+        .mobile-button {
+          display: none;
+        }
+      }
+    </style>
   </head>
-  <body>
-    <div class="site">
-      <header class="site-header">
-        <a class="wordmark" href="#home">ZIZHUO XU</a>
-        <nav aria-label="Main navigation">
-          <a class="active" href="#home">Home</a>
-          <a href="#publications">Publications</a>
-          <a href="#research">Research</a>
-          <a href="#awards">Awards</a>
-          <a href="assets/Zizhuo_Xu_CV.pdf">CV</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </header>
-
-      <main>
-        <section class="intro" id="home">
-          <aside class="identity">
-            <p class="identity-name">Zizhuo Xu</p>
-            <p class="identity-role">
-              Researcher in Marine Engineering<br />and Autonomous Systems
-            </p>
-            <a class="institution" href="https://english.hust.edu.cn/">
-              Huazhong University of<br />Science and Technology
-            </a>
-
-            <div class="identity-links" aria-label="Profile links">
-              <a href="mailto:xzz2022hust@gmail.com" aria-label="Email">
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path
-                    d="M3 5h18v14H3V5Zm2 2v.3l7 5 7-5V7H5Zm14 10V9.8l-7 5-7-5V17h14Z"
-                  />
-                </svg>
-              </a>
-              <a href="https://github.com/xzz2022hust-oss" aria-label="GitHub">
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path
-                    d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.87c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.35 1.09 2.92.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.6 9.6 0 0 1 12 6.82a9.6 9.6 0 0 1 2.5.34c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.77c0 .26.18.58.69.48A10 10 0 0 0 12 2Z"
-                  />
-                </svg>
-              </a>
-              <a href="assets/Zizhuo_Xu_CV.pdf" aria-label="Curriculum vitae">
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path
-                    d="M6 2h9l5 5v15H6V2Zm2 2v16h10V8h-4V4H8Zm7 1.4V7h1.6L15 5.4ZM10 11h6v2h-6v-2Zm0 4h6v2h-6v-2Z"
-                  />
-                </svg>
-              </a>
+  <body class="bg-gray-50 text-gray-800">
+    <nav class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <a class="site-name font-bold text-xl text-gray-900" href="#about"
+            >Zizhuo Xu</a
+          >
+          <div class="desktop-nav">
+            <div class="ml-10 flex items-baseline space-x-4">
+              <a
+                class="text-gray-600 hover-navy px-3 py-2 rounded-md text-sm font-medium"
+                href="#about"
+                >Home</a
+              >
+              <a
+                class="text-gray-600 hover-navy px-3 py-2 rounded-md text-sm font-medium"
+                href="#background"
+                >Background</a
+              >
+              <a
+                class="text-gray-600 hover-navy px-3 py-2 rounded-md text-sm font-medium"
+                href="#publications"
+                >Publications</a
+              >
+              <a
+                class="text-gray-600 hover-navy px-3 py-2 rounded-md text-sm font-medium"
+                href="#research"
+                >Research</a
+              >
+              <a
+                class="text-gray-600 hover-navy px-3 py-2 rounded-md text-sm font-medium"
+                href="#contact"
+                >Contact</a
+              >
             </div>
+          </div>
+          <button
+            class="mobile-button items-center justify-center p-2 rounded-md text-gray-500"
+            id="mobile-menu-button"
+            type="button"
+            aria-label="Open navigation"
+            aria-expanded="false"
+          >
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 6h16v2H4V6Zm0 5h16v2H4v-2Zm0 5h16v2H4v-2Z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-menu" id="mobile-menu">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a
+            class="text-gray-600 block px-3 py-2 rounded-md text-base font-medium"
+            href="#about"
+            >Home</a
+          >
+          <a
+            class="text-gray-600 block px-3 py-2 rounded-md text-base font-medium"
+            href="#background"
+            >Background</a
+          >
+          <a
+            class="text-gray-600 block px-3 py-2 rounded-md text-base font-medium"
+            href="#publications"
+            >Publications</a
+          >
+          <a
+            class="text-gray-600 block px-3 py-2 rounded-md text-base font-medium"
+            href="#research"
+            >Research</a
+          >
+          <a
+            class="text-gray-600 block px-3 py-2 rounded-md text-base font-medium"
+            href="#contact"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
 
-            <p class="location">Wuhan, China</p>
-          </aside>
-
-          <div class="about">
-            <h1>About me</h1>
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <section class="hero-card bg-white p-8 rounded-xl shadow-md" id="about">
+        <div class="hero-copy">
+          <p class="hero-label">Marine Engineering · Autonomous Systems</p>
+          <h1 class="text-3xl font-bold text-gray-900 mt-2 mb-3">Zizhuo Xu</h1>
+          <div class="space-y-4 text-gray-700 leading-relaxed">
             <p>
               I am a researcher in marine engineering and autonomous systems. I
-              received my B.Eng. in Marine Engineering from the
-              <a href="https://ch.hust.edu.cn/"
-                >School of Naval Architecture and Ocean Engineering</a
-              >
-              at Huazhong University of Science and Technology. My undergraduate
-              research was supervised by Prof. Xianzhou Wang.
+              received my B.Eng. in Marine Engineering from the School of Naval
+              Architecture and Ocean Engineering at Huazhong University of
+              Science and Technology.
             </p>
             <p>
-              My work studies how physical structure and data can be combined to
-              build reliable models of nonlinear dynamical systems. I am
-              particularly interested in system identification, state
-              estimation, physics-informed machine learning, parameter
-              identifiability, and uncertainty quantification. Ship maneuvering
-              is my main application domain, with broader interests in
-              autonomous marine vehicles and safety-critical control.
+              My research combines physical structure and data-driven methods to
+              build reliable models of nonlinear dynamical systems. I focus on
+              system identification, physics-informed machine learning,
+              parameter identifiability, uncertainty quantification, and ship
+              maneuvering prediction.
             </p>
-            <p>
-              My recent research develops differentiable MMG ship models,
-              identifiability-guided parameter selection, and modular residual
-              learning for operating-condition changes and multi-source
-              disturbances.
-            </p>
+          </div>
+          <div class="mt-6 flex items-center space-x-4">
+            <a class="social-link" href="mailto:xzz2022hust@gmail.com">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M3 5h18v14H3V5Zm2 2v.3l7 5 7-5V7H5Zm14 10V9.8l-7 5-7-5V17h14Z"
+                />
+              </svg>
+              Email
+            </a>
+            <a class="social-link" href="https://github.com/xzz2022hust-oss">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.87c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.35 1.09 2.92.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.6 9.6 0 0 1 12 6.82a9.6 9.6 0 0 1 2.5.34c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.77c0 .26.18.58.69.48A10 10 0 0 0 12 2Z"
+                />
+              </svg>
+              GitHub
+            </a>
+            <a class="social-link" href="assets/Zizhuo_Xu_CV.pdf">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M6 2h9l5 5v15H6V2Zm2 2v16h10V8h-4V4H8Zm7 1.4V7h1.6L15 5.4ZM10 11h6v2h-6v-2Zm0 4h6v2h-6v-2Z"
+                />
+              </svg>
+              CV
+            </a>
+          </div>
+        </div>
+      </section>
 
-            <div class="about-columns">
-              <div>
-                <h2>Interests</h2>
-                <ul>
-                  <li>System identification</li>
-                  <li>Physics-informed machine learning</li>
-                  <li>Differentiable simulation</li>
-                  <li>Parameter identifiability</li>
-                  <li>Uncertainty quantification</li>
-                  <li>Autonomous marine systems</li>
-                </ul>
-              </div>
-              <div>
-                <h2>Education</h2>
-                <div class="education-item">
-                  <span class="education-icon" aria-hidden="true">◆</span>
-                  <div>
-                    <p>B.Eng. in Marine Engineering, 2026</p>
-                    <small>Huazhong University of Science and Technology</small>
-                  </div>
-                </div>
-                <div class="education-note">
-                  <strong>Undergraduate thesis</strong>
-                  <span
-                    >Physics-Structured Ship Maneuvering Prediction under
-                    Multi-Source Disturbances with Uncertainty
-                    Decomposition</span
-                  >
-                </div>
-              </div>
+      <section class="mt-12" id="background">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">
+          Appointments &amp; Education
+        </h2>
+        <div class="bg-white p-6 rounded-xl shadow-md">
+          <div class="background-item">
+            <span class="dot-icon" aria-hidden="true"></span>
+            <div>
+              <p class="font-semibold">
+                Undergraduate Researcher (2026–present)
+              </p>
+              <p class="text-gray-600">
+                Huazhong University of Science and Technology, Wuhan, China
+              </p>
+              <p class="text-sm text-gray-500 mt-1">
+                Differentiable modeling, system identification, hybrid learning,
+                and uncertainty quantification.
+              </p>
             </div>
           </div>
-        </section>
-
-        <section class="content-section" id="publications">
-          <div class="section-title">
-            <p>Selected work</p>
-            <h2>Publications</h2>
-          </div>
-          <div class="section-content publication-list">
-            <article class="publication">
-              <span class="pub-year">2026</span>
-              <div>
-                <h3>
-                  Regime-Gated Identifiability-Guided Expert Specialization of
-                  the MMG Model for Generalizable Ship Maneuvering Prediction
-                </h3>
-                <p>
-                  <strong>Zizhuo Xu</strong>, Yinghao Ma, Junjie Meng, Xianzhou
-                  Wang
-                </p>
-                <p class="venue">Under review at <em>Ocean Engineering</em></p>
-                <a href="https://doi.org/10.2139/ssrn.7239757">Paper ↗</a>
-              </div>
-            </article>
-            <article class="publication">
-              <span class="pub-year">2026</span>
-              <div>
-                <h3>
-                  Efficient Ship Maneuvering Model Identification via
-                  Differentiable MMG: Is Full-Parameter Calibration Always
-                  Better?
-                </h3>
-                <p><strong>Zizhuo Xu</strong>, Yinghao Ma, Xianzhou Wang</p>
-                <p class="venue">Under review at <em>Ocean Engineering</em></p>
-                <a href="https://doi.org/10.2139/ssrn.6965894">Paper ↗</a>
-              </div>
-            </article>
-            <article class="publication">
-              <span class="pub-year">2026</span>
-              <div>
-                <h3>
-                  Physics-Structured Residual Learning for Ship Maneuvering
-                  Prediction: Multi-Source Disturbance Decomposition and
-                  Compensation
-                </h3>
-                <p>
-                  <strong>Zizhuo Xu</strong>, Zhen Yao, Bin Luo, Xianzhou Wang
-                </p>
-                <p class="venue">
-                  <em>Journal of Marine Science and Engineering</em>, 14, 808
-                </p>
-                <a href="https://doi.org/10.3390/jmse14090808">DOI ↗</a>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <section class="content-section" id="research">
-          <div class="section-title">
-            <p>Current themes</p>
-            <h2>Research</h2>
-          </div>
-          <div class="section-content project-grid">
-            <article>
-              <span>01</span>
-              <h3>Differentiable MMG Identification</h3>
-              <p>
-                A differentiable 45-parameter ship maneuvering model that
-                reduced calibration time from about five days to 20 minutes.
+          <div class="background-item">
+            <span class="dot-icon" aria-hidden="true"></span>
+            <div>
+              <p class="font-semibold">B.Eng. in Marine Engineering (2026)</p>
+              <p class="text-gray-600">
+                School of Naval Architecture and Ocean Engineering, HUST
               </p>
-            </article>
-            <article>
-              <span>02</span>
-              <h3>Regime-Gated MMG Experts</h3>
-              <p>
-                Identifiability-constrained expert specialization across
-                operating regimes for more generalizable trajectory prediction.
+              <p class="text-sm text-gray-500 mt-1">
+                Thesis: Physics-Structured Ship Maneuvering Prediction under
+                Multi-Source Disturbances with Uncertainty Decomposition.
               </p>
-            </article>
-            <article>
-              <span>03</span>
-              <h3>Hybrid Disturbance Modeling</h3>
-              <p>
-                Physics-structured residual learning and hierarchical
-                uncertainty attribution for disturbances and component
-                degradation.
-              </p>
-            </article>
-            <article>
-              <span>04</span>
-              <h3>Intelligent Waste Sorting</h3>
-              <p>
-                Mechanical design and system integration for a YOLOv8-driven
-                waste-sorting prototype with robotic actuation.
-              </p>
-            </article>
+            </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="content-section" id="awards">
-          <div class="section-title">
-            <p>Recognition</p>
-            <h2>Awards</h2>
-          </div>
-          <div class="section-content awards-list">
-            <article>
-              <div>
-                <h3>First Prize, Mechanical Advanced Graphics Track</h3>
-                <p>
-                  17th Higher Education Cup National Advanced Graphics
-                  Competition · Individual rank: 23rd nationally
-                </p>
-              </div>
-              <span>2024</span>
-            </article>
-            <article>
-              <div>
-                <h3>First Prize, Mechanical Team</h3>
-                <p>
-                  17th Higher Education Cup National Advanced Graphics
-                  Competition · Team rank: 1st nationally
-                </p>
-              </div>
-              <span>2024</span>
-            </article>
-            <article>
-              <div>
-                <h3>First Prize, Mechanical Category</h3>
-                <p>
-                  4th Hubei Provincial Advanced Graphics and Product Information
-                  Modeling Competition · Provincial rank: 7th
-                </p>
-              </div>
-              <span>2024</span>
-            </article>
-          </div>
-        </section>
-
-        <section class="contact" id="contact">
-          <div>
-            <p class="contact-label">Contact</p>
-            <h2>Let’s talk about research.</h2>
-          </div>
-          <div class="contact-details">
-            <p>
-              I welcome conversations about research, graduate study, and
-              collaboration.
+      <section class="mt-12" id="publications">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">
+          Recent publications and preprints
+        </h2>
+        <div class="space-y-6">
+          <article class="paper-card bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="font-bold text-lg text-navy">
+              Regime-Gated Identifiability-Guided Expert Specialization of the
+              MMG Model for Generalizable Ship Maneuvering Prediction
+            </h3>
+            <p class="text-sm text-gray-600 mt-1">
+              <strong>Zizhuo Xu</strong>, Yinghao Ma, Junjie Meng, Xianzhou Wang
             </p>
-            <a href="mailto:xzz2022hust@gmail.com">xzz2022hust@gmail.com</a>
-          </div>
-        </section>
-      </main>
+            <p class="text-sm text-gray-500 mt-2">
+              Under review at <em>Ocean Engineering</em> · 2026
+            </p>
+            <a
+              class="text-navy text-sm font-semibold mt-3 inline-block"
+              href="https://doi.org/10.2139/ssrn.7239757"
+              >Read preprint ↗</a
+            >
+          </article>
+          <article class="paper-card bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="font-bold text-lg text-navy">
+              Efficient Ship Maneuvering Model Identification via Differentiable
+              MMG: Is Full-Parameter Calibration Always Better?
+            </h3>
+            <p class="text-sm text-gray-600 mt-1">
+              <strong>Zizhuo Xu</strong>, Yinghao Ma, Xianzhou Wang
+            </p>
+            <p class="text-sm text-gray-500 mt-2">
+              Under review at <em>Ocean Engineering</em> · 2026
+            </p>
+            <a
+              class="text-navy text-sm font-semibold mt-3 inline-block"
+              href="https://doi.org/10.2139/ssrn.6965894"
+              >Read preprint ↗</a
+            >
+          </article>
+          <article class="paper-card bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="font-bold text-lg text-navy">
+              Physics-Structured Residual Learning for Ship Maneuvering
+              Prediction: Multi-Source Disturbance Decomposition and
+              Compensation
+            </h3>
+            <p class="text-sm text-gray-600 mt-1">
+              <strong>Zizhuo Xu</strong>, Zhen Yao, Bin Luo, Xianzhou Wang
+            </p>
+            <p class="text-sm text-gray-500 mt-2">
+              <em>Journal of Marine Science and Engineering</em>, 14, 808 · 2026
+            </p>
+            <a
+              class="text-navy text-sm font-semibold mt-3 inline-block"
+              href="https://doi.org/10.3390/jmse14090808"
+              >Read publication ↗</a
+            >
+          </article>
+        </div>
+      </section>
 
-      <footer>
-        <span>© 2026 Zizhuo Xu</span>
-        <span
-          >Marine engineering · System identification · Physics-informed
-          learning</span
-        >
+      <section class="mt-12" id="research">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">Research projects</h2>
+        <div class="space-y-6">
+          <article class="project-card bg-white p-6 rounded-lg shadow-sm">
+            <p class="project-number">01 · DIFFERENTIABLE PHYSICS</p>
+            <h3 class="font-bold text-lg text-navy mt-2">
+              Differentiable MMG Identification
+            </h3>
+            <p class="text-gray-600 mt-2">
+              Built a differentiable 45-parameter ship maneuvering model and
+              reduced calibration time from about five days to 20 minutes.
+              Fisher-guided selection improved held-out berthing RMSE using only
+              13 calibrated parameters.
+            </p>
+            <span class="metric">15× faster calibration</span
+            ><span class="metric">1.19 m held-out RMSE</span>
+          </article>
+          <article class="project-card bg-white p-6 rounded-lg shadow-sm">
+            <p class="project-number">02 · GENERALIZATION</p>
+            <h3 class="font-bold text-lg text-navy mt-2">
+              Regime-Gated MMG Experts
+            </h3>
+            <p class="text-gray-600 mt-2">
+              Developed identifiability-constrained expert specialization across
+              operating regimes, reducing mean 80-second trajectory RMSE from
+              0.740 m to 0.486 m.
+            </p>
+          </article>
+          <article class="project-card bg-white p-6 rounded-lg shadow-sm">
+            <p class="project-number">03 · UNCERTAINTY</p>
+            <h3 class="font-bold text-lg text-navy mt-2">
+              Hybrid Disturbance Modeling
+            </h3>
+            <p class="text-gray-600 mt-2">
+              Combined an MMG physics backbone with disturbance-specific
+              residual experts and hierarchical uncertainty attribution for
+              changing environments and component degradation.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="mt-12" id="awards">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">Awards</h2>
+        <div class="bg-white p-6 rounded-xl shadow-md">
+          <div class="award-row">
+            <div>
+              <p class="font-semibold">
+                First Prize, Mechanical Advanced Graphics Track
+              </p>
+              <p class="text-sm text-gray-500 mt-1">
+                17th Higher Education Cup · Individual rank: 23rd nationally
+              </p>
+            </div>
+            <span class="text-navy font-semibold">2024</span>
+          </div>
+          <div class="award-row">
+            <div>
+              <p class="font-semibold">First Prize, Mechanical Team</p>
+              <p class="text-sm text-gray-500 mt-1">
+                17th Higher Education Cup · Team rank: 1st nationally
+              </p>
+            </div>
+            <span class="text-navy font-semibold">2024</span>
+          </div>
+          <div class="award-row">
+            <div>
+              <p class="font-semibold">First Prize, Mechanical Category</p>
+              <p class="text-sm text-gray-500 mt-1">
+                Hubei Provincial Advanced Graphics Competition · Provincial
+                rank: 7th
+              </p>
+            </div>
+            <span class="text-navy font-semibold">2024</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-12" id="contact">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">Get in touch</h2>
+        <div class="bg-navy text-white p-8 rounded-xl shadow-md">
+          <p>
+            I welcome conversations about research, graduate study, and
+            collaboration.
+          </p>
+          <a
+            class="inline-block mt-4 font-semibold text-white"
+            href="mailto:xzz2022hust@gmail.com"
+            >xzz2022hust@gmail.com ↗</a
+          >
+        </div>
+      </section>
+
+      <footer class="text-center text-gray-500 text-sm mt-12">
+        © 2026 Zizhuo Xu · Wuhan, China
       </footer>
-    </div>
+    </main>
+
+    <script>
+      const button = document.getElementById("mobile-menu-button");
+      const menu = document.getElementById("mobile-menu");
+      button.addEventListener("click", () => {
+        const open = menu.classList.toggle("open");
+        button.setAttribute("aria-expanded", String(open));
+      });
+      menu
+        .querySelectorAll("a")
+        .forEach((link) =>
+          link.addEventListener("click", () => menu.classList.remove("open")),
+        );
+    </script>
   </body>
 </html>
